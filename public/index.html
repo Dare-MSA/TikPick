@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikPick — TikTok Video Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="nav-left">
+        <a href="/" class="logo">TikPick</a>
+        <span class="nav-tagline">Video & MP3 Downloader</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Download TikTok Videos Instantly</h1>
+      <p class="hero-subtitle">Fast, clean, watermark‑free downloads — powered by <strong>TikPick</strong>.</p>
+
+      <!-- Input Section -->
+      <div id="input-section" class="input-group">
+        <input type="text" id="url-input" placeholder="Paste TikTok link here..." />
+        <button id="btn-paste" type="button">Paste</button>
+        <button id="btn-fetch" type="button">Get Download Links</button>
+      </div>
+
+      <p id="error-msg" class="error" hidden></p>
+
+      <!-- Loader -->
+      <div id="loader" class="loader-wrapper" hidden>
+        <div class="spinner"></div>
+        <p>Processing your TikTok link…</p>
+        <div class="loader-fun">
+          <div class="wave-bars">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar-fill" id="progress-bar"></div>
+          </div>
+          <div class="loader-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="loader-tips" id="loader-tips"></p>
+        </div>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result-section" class="result-card" hidden>
+        <img id="result-thumb" src="" alt="" />
+        <div class="result-info">
+          <p id="result-title" class="result-title"></p>
+          <p id="result-author" class="result-author"></p>
+          <button id="btn-download" class="btn-dl" type="button">📹 Download Video (MP4)</button>
+          <button id="btn-reset" class="btn-new" type="button">← Download another video</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Why TikPick?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Unlimited Downloads</h3>
+          <p>Save as many TikTok videos as you want — no limits.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>No Watermark</h3>
+          <p>Clean, high‑quality MP4 files every time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Fast & Secure</h3>
+          <p>Instant processing with secure, private downloads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How it Works</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Copy Link</h3>
+          <p>Copy the TikTok video link from the app.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Paste & Fetch</h3>
+          <p>Paste the link and click "Get Download Links".</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Download</h3>
+          <p>Download your video instantly — watermark free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is TikPick free to use?</summary>
+          <p>Yes, completely free with no hidden charges.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to install anything?</summary>
+          <p>No, TikPick works directly in your browser.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are downloads watermark-free?</summary>
+          <p>Yes, all videos are downloaded without watermarks.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 TikPick. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
